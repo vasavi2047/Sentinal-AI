@@ -42,7 +42,7 @@ setLoading(true);
 
 const response =
 await fetch(
-"http://127.0.0.1:8000/scan/message",
+"https://sentinal-ai-backend.onrender.com/scan/message",
 {
 
 method:"POST",

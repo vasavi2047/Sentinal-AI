@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://127.0.0.1:8000/auth";
+const API = "https://sentinal-ai-backend.onrender.com/auth";
 
 export const signupUser = async (user) => {
   const response = await axios.post(`${API}/signup`, user);
