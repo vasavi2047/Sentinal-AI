@@ -39,3 +39,4 @@ uritemplate==4.2.0
 urllib3==2.7.0
 uvicorn==0.51.0
 groq==0.31.0
+Pillow==11.3.0
