@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+/* =========================
+   Theme Variables
+========================= */
+
+:root {
+
+    --bg-color: #f1f5f9;
+    --text-color: #111827;
+    --card-color: #ffffff;
+
+    --secondary-text: #64748b;
+
+    --chart-text: #334155;
+    --chart-grid: #cbd5e1;
+
+}
+
+/* =========================
+   Dark Theme
+========================= */
+
+body.dark-theme {
+
+    --bg-color: #0f172a;
+    --text-color: #ffffff;
+    --card-color: #1e293b;
+
+    --secondary-text: #cbd5e1;
+
+    --chart-text: #e2e8f0;
+    --chart-grid: #475569;
+
+}
+
+/* =========================
+   Body
+========================= */
+
+body {
+
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    transition: .3s;
+
+}
+
+/* =========================
+   Global Dark Mode Text
+========================= */
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme p,
+body.dark-theme span,
+body.dark-theme label,
+body.dark-theme td,
+body.dark-theme th {
+
+    color: white;
+
+}
+
+/* =========================
+   Cards
+========================= */
+
+.bg-white {
+
+    background: var(--card-color);
+
+}
+
+
+body.dark-theme .bg-white {
+
+    background:#1e293b !important;
+
+}
+
+/* =========================
+   Tailwind Text Fixes
+========================= */
+
+body.dark-theme .text-black {
+
+    color:white !important;
+
+}
+
+
+body.dark-theme .text-gray-500,
+body.dark-theme .text-gray-600 {
+
+    color:#cbd5e1 !important;
+
+}
+
+
+body.dark-theme .text-gray-700 {
+
+    color:#e2e8f0 !important;
+
+}
+
+
+body.dark-theme .text-slate-800 {
+
+    color:white !important;
+
+}
+
+/* =========================
+   Borders
+========================= */
+
+body.dark-theme .border-slate-200 {
+
+    border-color:#334155 !important;
+
+}
+
+/* =========================
+   Tables
+========================= */
+
+body.dark-theme table {
+
+    color:white;
+
+}
+
+
+body.dark-theme .border-b {
+
+    border-color:#334155 !important;
+
+}
+
+/* =========================
+   Shadows
+========================= */
+
+body.dark-theme .shadow,
+body.dark-theme .shadow-md,
+body.dark-theme .shadow-lg {
+
+    box-shadow:
+    0 0 15px rgba(0,0,0,.45);
+
+}
+
+/* =========================
+   Charts (Recharts)
+========================= */
+
+.recharts-text {
+
+    fill:var(--chart-text);
+
+}
+
+
+.recharts-cartesian-grid line {
+
+    stroke:var(--chart-grid);
+
+}
+
+/* =========================
+   Smooth Theme Transition
+========================= */
+
+* {
+
+    transition:
+    background-color .3s,
+    color .3s,
+    border-color .3s;
+
+}

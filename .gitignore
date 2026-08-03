@@ -1,0 +1,29 @@
+# Python backend
+venv/
+backend/venv/
+.venv/
+backend/.venv/
+__pycache__/
+backend/**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.env.*
+backend/.env
+
+# Uploaded/generated backend content
+backend/uploads/
+backend/uploads/**
+
+# Frontend build/deps
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+
+# Editor and OS
+.vscode/
+.DS_Store
