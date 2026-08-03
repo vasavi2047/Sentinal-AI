@@ -23,6 +23,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "https://sentinal-ai-frontend-w3b1.onrender.com",
+
     ],
 
     allow_credentials=True,
